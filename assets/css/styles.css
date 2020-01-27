@@ -350,3 +350,7 @@ a:visited { color: #5A8B86; }
 form > div {
 	margin: 10px -15px;
 }
+
+#sign-in-submit:hover, #sign-up-submit:hover{
+	background-color: #ff999975;
+}
