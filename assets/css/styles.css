@@ -38,7 +38,7 @@ a:visited { color: #D87563; }
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A43222', endColorstr='#CD503A',GradientType=0 ); 
 	color: white;
 	margin-bottom: 0;
-	padding-bottom: 0px;
+	padding-bottom: 50px;
 }
 .header h1 {
 	font-family: "Open sans", Arial;
