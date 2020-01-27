@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <!-- Custom styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
     
     
     <!--[if lt IE 9]>
@@ -39,70 +40,75 @@
                 
                 
                 <div class="row">
-                    <div class="col-md-12">
-                        <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#sign-in">Se
-                            connecter
-                        </button>
-                        <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#sign-up">
-                            S'enregistrer
-                        </button>
-                        
-                        <div id="sign-in" class="collapse">
-                            <form class="form-inline" role="form">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group"><input type="text" class="form-control input-lg"
-                                                                       id="nicknameRegister"
-                                                                       placeholder="Ton pseudo"></div>
-                                        <div class="form-group"><input type="password" class="form-control input-lg"
-                                                                       id="passwordRegister"
-                                                                       placeholder="Ton mot de passe">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <button type="submit" class="btn btn-lg btn-default">Se connecter</button>
-                            </form>
-                        </div>
-                        
-                        <div id="sign-up" class="collapse">
-                            <form class="form-inline" role="form">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group"><input type="text" class="form-control input-lg"
-                                                                       id="nicknameRegister"
-                                                                       placeholder="Ton pseudo"></div>
-                                        <div class="form-group"><input type="email" class="form-control input-lg"
-                                                                       id="emailRegister"
-                                                                       placeholder="Ton email"></div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group"><input type="password" class="form-control input-lg"
-                                                                       id="passwordRegister"
-                                                                       placeholder="Ton mot de passe">
-                                        </div>
-                                        <div class="form-group"><input type="password" class="form-control input-lg"
-                                                                       id="passwordRegisterBis"
-                                                                       placeholder="Confirmer ton mot de passe"></div>
-                                    </div>
-                                </div>
-                                
-                                <button type="submit" class="btn btn-lg btn-default">S'inscrire</button>
-                            </form>
+                    <div class="col-md-12" id="account">
+                        <div id="switch">
+                            <!--.or.animated OR-->
+                            <div class="diamond"></div>
+                            <div class="choice on" id="sign-in">Déjà membre</div>
+                            <div class="choice" id="sign-up">Nouveau joueur</div>
                         </div>
                     </div>
-                    
-                    <div style="display: none" class="col-md-6">
-                        <p> Autrement, inscris toi, et joue gratuit avec
-                            tes amis... si tenté qu'ils soient VRAIMENT des amis...</p>
-                        <br>
-                    
-                    
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="sign-in-div">
+                        <form class="form-inline" role="form">
+                            <div class="row">
+                                <div class="col-md-12 form-field">
+                                    <div class="form-group"><input type="text" class="form-control input-lg"
+                                                                   id="nickname"
+                                                                   placeholder="Ton pseudo"></div>
+                                    <div class="form-group"><input type="password" class="form-control input-lg"
+                                                                   id="password"
+                                                                   placeholder="Ton mot de passe">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-lg btn-default">Se connecter</button>
+                        </form>
                     </div>
-                
+                    
+                    <div class="col-md-12" id="sign-up-div">
+                        <form class="form-inline" role="form">
+                            <div class="row">
+                                <div class="col-md-12 form-field">
+                                    <div class="form-group"><input type="text" class="form-control input-lg"
+                                                                   id="nicknameRegister"
+                                                                   placeholder="Ton pseudo"></div>
+                                    <div class="form-group"><input type="email" class="form-control input-lg"
+                                                                   id="emailRegister"
+                                                                   placeholder="Ton email"></div>
+                                </div>
+                                <div class="col-md-12 form-field">
+                                    <div class="form-group"><input type="password" class="form-control input-lg"
+                                                                   id="passwordRegister"
+                                                                   placeholder="Ton mot de passe">
+                                    </div>
+                                    <div class="form-group"><input type="password" class="form-control input-lg"
+                                                                   id="passwordVerification"
+                                                                   placeholder="Confirmer ton mot de passe"></div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-lg btn-default">S'inscrire</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+        
         </div>
+        
+        <div style="display: none" class="col-md-6">
+            <p> Autrement, inscris toi, et joue gratuit avec
+                tes amis... si tenté qu'ils soient VRAIMENT des amis...</p>
+            <br>
+        
+        
+        </div>
+    
+    </div>
+    </div>
+    </div>
     
     </div>
 </header>
@@ -205,9 +211,11 @@
             </div>
             <div class="col-md-5 col-md-push-1" id="footer-2">
                 <h2>Vous avez des questions ?</h2>
-                <p>Notre équipe répondra à vos question à l'adresse suivante: <a href="mailto:oli.charon@gmail.com?subject=Contact DoYouTrust">oli.charon@gmail.com</a> </p>
-                <p>Pour être informé des récents correctifs et suggérer des amélioration au niveau du code, vous pouvez accéder au répertoire <a
-                        href="https://github.com/Naayru/Naayru.github.io" target="_blank">GitHub</a></p>
+                <p>Notre équipe répondra à vos question à l'adresse suivante: <a
+                        href="mailto:oli.charon@gmail.com?subject=Contact DoYouTrust">oli.charon@gmail.com</a></p>
+                <p>Pour être informé des récents correctifs et suggérer des amélioration au niveau du code, vous pouvez
+                    accéder au répertoire <a
+                            href="https://github.com/Naayru/Naayru.github.io" target="_blank">GitHub</a></p>
             </div>
         </div>
     </section>

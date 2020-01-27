@@ -270,3 +270,83 @@ a:visited { color: #5A8B86; }
 
 /**/
 
+/********************************************************/
+/*                     Account forms                    */
+/********************************************************/
+
+#sign-up-div{
+	display: none;
+}
+
+.transition {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+#switch {
+	font-size: 0;
+	background-color: #CD503A;
+	display: inline-block;
+	color: #F6EFDD;
+	padding: 4px;
+	vertical-align: middle;
+}
+#switch .choice {
+	font-size: 16px;
+	width: 150px;
+	height: 45px;
+	line-height: 30px;
+	text-align: center;
+	padding: 8px;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	vertical-align: middle;
+}
+#switch .choice.on {
+	color: #fff;
+	background-color: #A43222;
+}
+#switch .or {
+	font-size: 10px;
+	color: #fff;
+	position: absolute;
+	margin-top: 19px;
+	margin-left: 108px;
+	z-index: 1;
+}
+#switch .diamond {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin-top: 19px;
+	margin-left: 150px;
+	background: #CD503A;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+}
+
+.form-field{
+	justify-content: space-evenly;
+	display: flex;
+	margin: 5px 0;
+	padding: 0 150px;
+}
+
+form > div {
+	margin: 10px -15px;
+}
