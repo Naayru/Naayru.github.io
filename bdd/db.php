@@ -1,9 +1,9 @@
 
 <?php
-    $host = 'localhost:3306';
+    $host = '192.168.1.86';
     $dbname = 'doyoutrust';
-    $user = 'root'; // utilisateur de la base de données
-    $pass = 'password'; // Mot de passe de la base de données
+    $user = 'fdp'; // utilisateur de la base de données
+    $pass = '0000'; // Mot de passe de la base de données
     $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
 
 // Connexion à la base de données

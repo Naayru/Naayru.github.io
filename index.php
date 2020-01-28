@@ -29,7 +29,7 @@
 
 <?php
     
-    require(__DIR__ . "/bdd/user/read.php");
+    require(__DIR__ . "/bdd/users/read.php");
     
 ?>
 

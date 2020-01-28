@@ -2,29 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46514529-2b8e-425c-a87d-f80d4dead290" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bdd/db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bdd/user/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bdd/user/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bdd/user/read.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bdd/user/update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Picture1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Picture2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/ap-screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bombe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bonus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/desamorcer.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/iconfinder_github_317712.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/iconfinder_square-facebook_317727.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/iconfinder_square-twitter_317723.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/screen1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/screen2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/screen3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/html5shiv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/template.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/user/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/users/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/user/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/users/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/user/read.php" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/users/read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/user/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/users/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +33,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bdd/user/create.php">
+        <entry file="file://$PROJECT_DIR$/bdd/users/create.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="42" />
@@ -58,7 +42,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bdd/user/update.php">
+        <entry file="file://$PROJECT_DIR$/bdd/users/update.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
@@ -67,28 +51,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bdd/user/delete.php">
+        <entry file="file://$PROJECT_DIR$/bdd/users/delete.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bdd/user/read.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bdd/users/read.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bdd/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+            <state relative-caret-position="150">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -117,9 +101,10 @@
         <option value="$PROJECT_DIR$/bdd/user/create.php" />
         <option value="$PROJECT_DIR$/bdd/user/delete.php" />
         <option value="$PROJECT_DIR$/bdd/user/update.php" />
-        <option value="$PROJECT_DIR$/bdd/user/read.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/bdd/user/read.php" />
         <option value="$PROJECT_DIR$/bdd/db.php" />
+        <option value="$PROJECT_DIR$/bdd/users/read.php" />
       </list>
     </option>
   </component>
@@ -151,7 +136,7 @@
               <item name="SuperAwesome" type="b2602c69:ProjectViewProjectNode" />
               <item name="SuperAwesome" type="462c0819:PsiDirectoryNode" />
               <item name="bdd" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -195,12 +180,12 @@
       <workItem from="1580136339751" duration="4306000" />
       <workItem from="1580140694514" duration="2243000" />
       <workItem from="1580205880876" duration="1678000" />
-      <workItem from="1580218764637" duration="1550000" />
+      <workItem from="1580218764637" duration="5135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16218000" />
+    <option name="totallyTimeSpent" value="19803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="987" extended-state="6" />
@@ -235,31 +220,17 @@
     <entry file="file://$PROJECT_DIR$/assets/css/styles.css" />
     <entry file="file://$PROJECT_DIR$/assets/js/html5shiv.js" />
     <entry file="file://$PROJECT_DIR$/assets/js/template.js" />
-    <entry file="file://$PROJECT_DIR$/bdd/user/create.php">
+    <entry file="file://$PROJECT_DIR$/bdd/users/create.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bdd/user/update.php">
+    <entry file="file://$PROJECT_DIR$/bdd/users/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bdd/user/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bdd/user/read.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -270,10 +241,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bdd/users/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bdd/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        <state relative-caret-position="150">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdd/users/read.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
         </state>
       </provider>
     </entry>
