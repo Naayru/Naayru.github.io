@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46514529-2b8e-425c-a87d-f80d4dead290" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bdd/db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bdd/user/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bdd/user/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bdd/user/read.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bdd/user/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Picture1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Picture2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/ap-screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/bombe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/bonus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/desamorcer.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/iconfinder_github_317712.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/iconfinder_square-facebook_317727.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/iconfinder_square-twitter_317723.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/screen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/screen2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/screen3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/html5shiv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,43 +39,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bdd/user/create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bdd/user/update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bdd/user/delete.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bdd/user/read.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$PROJECT_DIR$/bdd/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="198" column="57" lean-forward="true" selection-start-line="198" selection-start-column="57" selection-end-line="198" selection-end-column="57" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="354" column="32" lean-forward="true" selection-start-line="354" selection-start-column="32" selection-end-line="354" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/html5shiv.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/template.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="225">
+              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -67,6 +102,7 @@
       <find>btn-d</find>
       <find>hover</find>
       <find>passwordRegister</find>
+      <find>assets/</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -78,6 +114,12 @@
         <option value="$PROJECT_DIR$/assets/js/template.js" />
         <option value="$PROJECT_DIR$/assets/css/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/bdd/user/create.php" />
+        <option value="$PROJECT_DIR$/bdd/user/delete.php" />
+        <option value="$PROJECT_DIR$/bdd/user/update.php" />
+        <option value="$PROJECT_DIR$/bdd/user/read.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/bdd/db.php" />
       </list>
     </option>
   </component>
@@ -103,19 +145,13 @@
             <path>
               <item name="SuperAwesome" type="b2602c69:ProjectViewProjectNode" />
               <item name="SuperAwesome" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="bdd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SuperAwesome" type="b2602c69:ProjectViewProjectNode" />
               <item name="SuperAwesome" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SuperAwesome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SuperAwesome" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="bdd" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -158,17 +194,19 @@
       <workItem from="1580118148315" duration="6441000" />
       <workItem from="1580136339751" duration="4306000" />
       <workItem from="1580140694514" duration="2243000" />
+      <workItem from="1580205880876" duration="1678000" />
+      <workItem from="1580218764637" duration="1550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12990000" />
+    <option name="totallyTimeSpent" value="16218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="987" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26040554" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -183,47 +221,59 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="430" height="787" id="Documentation" side_tool="true" weight="0.32977587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" x="0" y="0" width="430" height="787" id="Documentation" order="4" side_tool="true" weight="0.32977587" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/html5shiv.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/styles.css" />
+    <entry file="file://$PROJECT_DIR$/assets/js/html5shiv.js" />
+    <entry file="file://$PROJECT_DIR$/assets/js/template.js" />
+    <entry file="file://$PROJECT_DIR$/bdd/user/create.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/template.js">
+    <entry file="file://$PROJECT_DIR$/bdd/user/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/bdd/user/delete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="354" column="32" lean-forward="true" selection-start-line="354" selection-start-column="32" selection-end-line="354" selection-end-column="32" />
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/bdd/user/read.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="198" column="57" lean-forward="true" selection-start-line="198" selection-start-column="57" selection-end-line="198" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdd/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
         </state>
       </provider>
     </entry>

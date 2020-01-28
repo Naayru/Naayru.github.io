@@ -8,7 +8,7 @@
     
     <title>Do You Trust? The game</title>
     
-    <link rel="shortcut icon" href="assets/images/bombe.png">
+    <link rel="shortcut icon" href="images/bombe.png">
     
     <!-- Bootstrap itself -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -17,15 +17,21 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
     
     
     <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.js"></script> <![endif]-->
+    <script src="js/html5shiv.js"></script> <![endif]-->
 </head>
 
 <body>
+
+<?php
+    
+    require(__DIR__ . "/bdd/user/read.php");
+    
+?>
 
 <!-- Header -->
 <header class="header">
@@ -38,6 +44,7 @@
                     Ils savent comment désamorcer la bombe... mais peux tu leur faire confiance ?
                 </p>
                 
+                <h2></h2>
                 
                 <div class="row">
                     <div class="col-md-12" id="account">
@@ -136,7 +143,7 @@
         
         <div class="row featurelist space-after">
             <div class="col-md-5 col-sm-6 col-md-push-1 ">
-                <img class="img-feature img-responsive" src="assets/images/Picture2.png" alt="Sample image">
+                <img class="img-feature img-responsive" src="images/Picture2.png" alt="Sample image">
             </div>
             <div class="col-md-5 col-md-push-1 col-sm-6">
                 <h2 class="space-before">Les rôles, <span
@@ -151,7 +158,7 @@
         
         <div class="row featurelist space-after">
             <div class="col-md-5 col-sm-6 col-sm-push-6">
-                <img class="img-feature img-responsive" src="assets/images/bonus.jpg" alt="Sample image">
+                <img class="img-feature img-responsive" src="images/bonus.jpg" alt="Sample image">
             </div>
             <div class="col-md-5 col-sm-6 col-md-pull-4 col-sm-pull-6">
                 <h2 class="space-before">Les bonus, <span
@@ -170,7 +177,7 @@
         <!--
         <div class="row featurelist space-after">
             <div class="col-md-5 col-sm-6 col-md-push-1 col-sm-6">
-                <img class="img-feature img-responsive" src="assets/images/screen3.png" alt="Sample image">
+                <img class="img-feature img-responsive" src="images/screen3.png" alt="Sample image">
             </div>
             <div class="col-md-5 col-md-push-1 col-sm-6">
                 <h2 class="space-before">Violet does look good too!</span></h2>
@@ -196,13 +203,13 @@
                 
                 <div id="rs">
                     <a href="https://www.facebook.com/Do-You-Trust--100341478197437/" target="_blank"><img
-                            src="assets/images/iconfinder_square-facebook_317727.png"
+                            src="images/iconfinder_square-facebook_317727.png"
                             alt="facebook"></a>
                     <a href="#" target="_blank"><img
-                            src="assets/images/iconfinder_square-twitter_317723.png"
+                            src="images/iconfinder_square-twitter_317723.png"
                             alt="twitter"></a>
                     <a href="https://github.com/Naayru/Naayru.github.io" target="_blank"><img
-                            src="assets/images/iconfinder_github_317712.png"
+                            src="images/iconfinder_github_317712.png"
                             alt="github"></a>
                 </div>
             
@@ -228,7 +235,7 @@
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="assets/js/template.js"></script>
+<script src="js/template.js"></script>
 
 
 </body>
