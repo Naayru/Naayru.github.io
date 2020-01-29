@@ -12,5 +12,9 @@
     document.getElementById("addTime").addEventListener("click", function() {
         socket.emit('add time');
     });
+    document.getElementById("removeTime").addEventListener("click", function() {
+        socket.emit('remove time');
+    });
+    
 </script>
 </html>
