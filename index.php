@@ -1,7 +1,6 @@
-<!-- <?php
+ <?php
     require(__DIR__ . "/header.php");
-    ?> -->
-<?php include 'header.php';?>
+    ?> 
 <?php
     <!-- Lead -->
     <section class="container space-before space-after">
