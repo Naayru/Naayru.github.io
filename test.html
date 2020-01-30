@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<button type="button" id="addTime">Ajouter temps</button>
+<button type="button" id="removeTime">Enlever temps</button>
+<button type="button" id="speedUpTime">Accélérer temps</button>
+<button type="button" id="stopTime">Arrêter temps</button>
+
+<script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+<script>
+    var socket = io('192.168.1.87:3000');
+    document.getElementById("addTime").addEventListener("click", function() {
+        socket.emit('add time');
+    });
+    document.getElementById("removeTime").addEventListener("click", function() {
+        socket.emit('remove time');
+    });
+    
+</script>
+</html>

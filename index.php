@@ -1,6 +1,7 @@
 <?php
     require(__DIR__ . "/header.php");
     ?>
+
     <!-- Lead -->
     <section class="container space-before space-after">
         <div class="row">
