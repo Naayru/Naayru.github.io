@@ -44,7 +44,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="js/template.js"></script>
-
+<script src="js/script.js"></script>
 
 </body>
 </html>

@@ -6,7 +6,7 @@
     } else if (empty($_POST['password'])) {
     
     } else {
-        $checkAccount = "SELECT * FROM users WHERE nickname = :nickname AND password = :password";
+        $checkAccount = "SELECT * FROM users WHERE nickname = :nickname AND password = SHA2(:password,256)";
         
         
         //$checkAccount = "SELECT * FROM users WHERE nickname = :nickname AND password = SHA2(:password,256)";

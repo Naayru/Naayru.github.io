@@ -47,7 +47,21 @@
                     Ils savent comment désamorcer la bombe... mais peux tu leur faire confiance ?
                 </p>
                 
-                <h2></h2>
+                <?php if($_GET['created'] == 1){ //COMPTE CREE ?>
+                    <p class="ok-message"> Votre compte a bien été créé! </p>
+                <?php } else if ($_GET['created'] == 2){ //PSEUDO VIDE ?>
+                    <p class="error-message"> Merci de renseigner un pseudo pour votre compte </p>
+                <?php } else if ($_GET['created'] == 3){ //PSEUDO DEJA PRIS ?>
+                    <p class="error-message"> Pseudo déjà pris </p>
+                <?php } else if ($_GET['created'] == 4){ //MDP VIDE ?>
+                    <p class="error-message"> Merci de renseigner un mot de passe pour votre compte </p>
+                <?php } else if ($_GET['created'] == 5){ //CONFIRMATION MDP VIDE ?>
+                    <p class="error-message"> Merci de confirmer votre mot de passe </p>
+                <?php } else if ($_GET['created'] == 6){ //MDP != CONFIRMATION MDP ?>
+                    <p class="error-message"> Le mot de passe et la confirmation ne correspondent pas </p>
+                <?php } else if ($_GET['created'] == 7){ //MDP != CONFIRMATION MDP ?>
+                    <p class="error-message"> Merci de renseigner une adresse email pour votre compte </p>
+                <?php } ?>
                 
                 <?php if ($_SESSION){ ?>
                     <h2>Bienvenue <?= $_SESSION['nickname'] ?></h2>
@@ -93,22 +107,23 @@
                     </div>
                     
                     <div class="col-md-12" id="sign-up-div">
-                        <form class="form-inline" role="form">
+                        <form class="form-inline" role="form" method="POST" action="bdd/users/create.php"
+                              enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-md-12 form-field">
-                                    <div class="form-group"><input type="text" class="form-control input-lg"
+                                    <div class="form-group"><input name="nickname" type="text" class="form-control input-lg"
                                                                    id="nicknameRegister"
                                                                    placeholder="Ton pseudo"></div>
-                                    <div class="form-group"><input type="email" class="form-control input-lg"
+                                    <div class="form-group"><input name="email" type="email" class="form-control input-lg"
                                                                    id="emailRegister"
                                                                    placeholder="Ton email"></div>
                                 </div>
                                 <div class="col-md-12 form-field">
-                                    <div class="form-group"><input type="password" class="form-control input-lg"
+                                    <div class="form-group"><input name="password" type="password" class="form-control input-lg"
                                                                    id="passwordRegister"
                                                                    placeholder="Ton mot de passe">
                                     </div>
-                                    <div class="form-group"><input type="password" class="form-control input-lg"
+                                    <div class="form-group"><input name="confirmPassword" type="password" class="form-control input-lg"
                                                                    id="passwordVerification"
                                                                    placeholder="Confirmer ton mot de passe"></div>
                                 </div>

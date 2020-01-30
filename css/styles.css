@@ -527,3 +527,25 @@ form > div {
     background-color: #ff999975;
 
 }
+
+.ok-message{
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('https://i.imgur.com/Q9BGTuy.png');
+    margin: 25px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.error-message{
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('https://i.imgur.com/Z8q7ww7.png');
+    margin: 25px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
