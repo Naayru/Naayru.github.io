@@ -36,7 +36,7 @@
     <p class="small text-muted text-center">Copyright &copy; 2020, Aïl & Fines Herbes Corporation. Design by: <a
                 href="https://github.com/OlivierCharon" target="_blank"
                 rel="designer"
-                title="Github repository">Aïl & Fines Herbes Corporation</a>
+                title="Github repository" class="muted-link">Aïl & Fines Herbes Corporation</a>
     </p>
 </footer>
 

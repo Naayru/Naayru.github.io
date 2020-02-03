@@ -6,8 +6,6 @@ $(document).ready(function () {
         $_GET[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);
     }
 
-    console.log("ready!");
-    console.log(window.location.href);
     if ($_GET['created'] && $_GET['created'] > 1) {
         console.log('erreur du form');
 
@@ -24,6 +22,12 @@ $(document).ready(function () {
 
     }
 
+
+    $("#join-lobby-btn").on("click", function () {
+        $("#choice-lobby-div").fadeOut(function(){
+            $("#join-lobby-div").fadeIn();
+        });
+    });
 
 });
 

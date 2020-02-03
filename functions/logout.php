@@ -3,5 +3,5 @@
     if(isset($_SESSION)){
         session_destroy();
     }
-    header('location: /logoutConfirmation.php');
+        header("Location: /index.php?connected=1");
     

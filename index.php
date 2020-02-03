@@ -3,10 +3,10 @@
     ?>
 
     <!-- Lead -->
-    <section class="container space-before space-after">
+    <section id="home-title" class="container space-before space-after">
         <div class="row">
             <div class="col-sm-10 col-sm-push-1">
-                <h1 class="text-center">Règles du jeu</h1>
+                <h2 class="text-center">Règles du jeu</h2>
                 <p class="lead text-center">
                 </p>
             </div>
@@ -19,7 +19,10 @@
         
         <div class="row featurelist space-after">
             <div class="col-md-5 col-sm-6 col-md-push-1 ">
-                <img class="img-feature img-responsive" src="images/Picture2.png" alt="Sample image">
+                <i id="roles-img" class="fas fa-users"></i>
+<!--                <i id="bomb-img" class="img-feature img-responsive" class="fas fa-bomb"></i>-->
+<!--                <img id="bomb-img" class="img-feature img-responsive" alt="Sample image" src="https://img.icons8.com/ios/100/000000/bomb-with-timer.png">-->
+<!--                <img class="img-feature img-responsive" src="images/Picture2.png" alt="Sample image">-->
             </div>
             <div class="col-md-5 col-md-push-1 col-sm-6">
                 <h2 class="space-before">Les rôles, <span
@@ -34,7 +37,8 @@
         
         <div class="row featurelist space-after">
             <div class="col-md-5 col-sm-6 col-sm-push-6">
-                <img class="img-feature img-responsive" src="images/bonus.jpg" alt="Sample image">
+                <i id="bonus-img" class="fas fa-hand-holding-heart"></i>
+<!--                <img class="img-feature img-responsive" src="images/bonus.jpg" alt="Sample image">-->
             </div>
             <div class="col-md-5 col-sm-6 col-md-pull-4 col-sm-pull-6">
                 <h2 class="space-before">Les bonus, <span
