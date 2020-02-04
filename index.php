@@ -4,7 +4,9 @@
     <!-- require(__DIR__ . "/header.php"); -->
     <!-- require(header.html); -->
 
-
+<!DOCTYPE html>
+<html>
+<body>
     <!-- Lead -->
     <section id="home-title" class="container space-before space-after">
         <div class="row">
@@ -73,6 +75,8 @@
         -->
     </section>
     <!-- /Features -->
+    </body>
+</html>
 
 <?php
     require(__DIR__ . "/footer.php");
