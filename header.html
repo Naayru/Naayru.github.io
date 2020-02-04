@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require_once 'bdd/db.php';
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +22,7 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <!-- Custom styles -->
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
     
@@ -34,38 +36,53 @@
 <!-- Header -->
 <header class="header">
     <?php if ($_SESSION) { ?>
-        <a href="<?php session_destroy() ?>">
+        <a href="functions/logout.php">
             <button id="sign-out" type="button" class="btn btn-lg btn-default">Se déconnecter</button>
         </a>
     <?php } ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-push-2 text-center">
-                <h1>Do You Trust ?</h1>
+                <a href="/SuperAwesome/functions/roleAttribution.php">
+                    <h1>Do You Trust ?</h1>
+                </a>
                 <h2>Aïl & Fines Herbes Corporation</h2>
                 <p class="lead">
                     Ils savent comment désamorcer la bombe... mais peux tu leur faire confiance ?
                 </p>
                 
-                <?php if($_GET['created'] == 1){ //COMPTE CREE ?>
-                    <p class="ok-message"> Votre compte a bien été créé! </p>
-                <?php } else if ($_GET['created'] == 2){ //PSEUDO VIDE ?>
-                    <p class="error-message"> Merci de renseigner un pseudo pour votre compte </p>
-                <?php } else if ($_GET['created'] == 3){ //PSEUDO DEJA PRIS ?>
-                    <p class="error-message"> Pseudo déjà pris </p>
-                <?php } else if ($_GET['created'] == 4){ //MDP VIDE ?>
-                    <p class="error-message"> Merci de renseigner un mot de passe pour votre compte </p>
-                <?php } else if ($_GET['created'] == 5){ //CONFIRMATION MDP VIDE ?>
-                    <p class="error-message"> Merci de confirmer votre mot de passe </p>
-                <?php } else if ($_GET['created'] == 6){ //MDP != CONFIRMATION MDP ?>
-                    <p class="error-message"> Le mot de passe et la confirmation ne correspondent pas </p>
-                <?php } else if ($_GET['created'] == 7){ //MDP != CONFIRMATION MDP ?>
-                    <p class="error-message"> Merci de renseigner une adresse email pour votre compte </p>
-                <?php } ?>
+                <?php
+                    if ($_GET) {
+                        if ($_GET['created'] == 1) { //COMPTE CREE
+                            ?>
+                            <p class="ok-message"> Votre compte a bien été créé! </p>
+                        <?php } else if ($_GET['created'] == 2) { //PSEUDO VIDE ?>
+                            <p class="error-message"> Merci de renseigner un pseudo pour votre compte </p>
+                        <?php } else if ($_GET['created'] == 3) { //PSEUDO DEJA PRIS ?>
+                            <p class="error-message"> Pseudo déjà pris </p>
+                        <?php } else if ($_GET['created'] == 4) { //MDP VIDE ?>
+                            <p class="error-message"> Merci de renseigner un mot de passe pour votre compte </p>
+                        <?php } else if ($_GET['created'] == 5) { //CONFIRMATION MDP VIDE ?>
+                            <p class="error-message"> Merci de confirmer votre mot de passe </p>
+                        <?php } else if ($_GET['created'] == 6) { //MDP != CONFIRMATION MDP ?>
+                            <p class="error-message"> Le mot de passe et la confirmation ne correspondent pas </p>
+                        <?php } else if ($_GET['created'] == 7) { //MDP != CONFIRMATION MDP ?>
+                            <p class="error-message"> Merci de renseigner une adresse email pour votre compte </p>
+                        <?php }
+                        
+                        if ($_GET['connected'] == 2) { //PSEUDO VIDE ?>
+                            <p class="error-message"> Merci de renseigner votre pseudo </p>
+                        <?php } else if ($_GET['connected'] == 3) { //PSEUDO DEJA PRIS ?>
+                            <p class="error-message"> Merci de renseigner votre mot de passe </p>
+                        <?php } else if ($_GET['connected'] == 4) { //MDP VIDE ?>
+                            <p class="error-message"> Vos identifiants ne sont pas reconnus. <br> Merci de réessayer ou
+                                de créer un nouveau compte </p>
+                        <?php }
+                    } ?>
                 
                 <?php if ($_SESSION){ ?>
                     <h2>Bienvenue <?= $_SESSION['nickname'] ?></h2>
-                    <a href="#">
+                    <a href="pages/game.php">
                         <button id="play-button" type="button" class="btn btn-lg btn-default">Jouer</button>
                     </a>
                 
@@ -111,19 +128,23 @@
                               enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-md-12 form-field">
-                                    <div class="form-group"><input name="nickname" type="text" class="form-control input-lg"
+                                    <div class="form-group"><input name="nickname" type="text"
+                                                                   class="form-control input-lg"
                                                                    id="nicknameRegister"
                                                                    placeholder="Ton pseudo"></div>
-                                    <div class="form-group"><input name="email" type="email" class="form-control input-lg"
+                                    <div class="form-group"><input name="email" type="email"
+                                                                   class="form-control input-lg"
                                                                    id="emailRegister"
                                                                    placeholder="Ton email"></div>
                                 </div>
                                 <div class="col-md-12 form-field">
-                                    <div class="form-group"><input name="password" type="password" class="form-control input-lg"
+                                    <div class="form-group"><input name="password" type="password"
+                                                                   class="form-control input-lg"
                                                                    id="passwordRegister"
                                                                    placeholder="Ton mot de passe">
                                     </div>
-                                    <div class="form-group"><input name="confirmPassword" type="password" class="form-control input-lg"
+                                    <div class="form-group"><input name="confirmPassword" type="password"
+                                                                   class="form-control input-lg"
                                                                    id="passwordVerification"
                                                                    placeholder="Confirmer ton mot de passe"></div>
                                 </div>
@@ -149,10 +170,6 @@
         
         
         </div>
-    
-    </div>
-    </div>
-    </div>
     
     </div>
 </header>

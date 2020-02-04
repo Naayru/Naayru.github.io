@@ -3,5 +3,5 @@
     if(isset($_SESSION)){
         session_destroy();
     }
-    header('location: /logoutConfirmation.php');
+        header("Location: /roleAttribution.php?connected=1");
     
