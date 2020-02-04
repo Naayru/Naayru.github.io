@@ -24,10 +24,27 @@ $(document).ready(function () {
 
 
     $("#join-lobby-btn").on("click", function () {
-        $("#choice-lobby-div").fadeOut(function(){
+        $("#choice-lobby-div").fadeOut(function () {
             $("#join-lobby-div").fadeIn();
         });
     });
+
+
+    var table = $('#players-waiting').DataTable({
+        columnDefs: [
+            {targets: [0, 2], visible: false},
+            { "orderable": false, "targets": 1 }
+        ],
+        select: {
+            style: 'single'
+        },
+        sDom: '<"top">rt<"bottom"><"clear">'
+    });
+
+    $('#players-waiting tbody').on('click', 'tr', function () {
+        var data = table.row( this ).data();
+        $('#minesweeper').text('Le démineur est: '+ data[1]);
+    } );
 
 });
 

@@ -24,6 +24,8 @@
     <!-- Custom styles -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
     <link href='https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css' rel='stylesheet' type='text/css'>
+    <link href='https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css' rel='stylesheet' type='text/css'>
+    <link href='https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/styles.css">
     
     
@@ -34,6 +36,11 @@
 <body id="join-lobby-body">
 <!-- Header -->
 <header class="join-lobby-header">
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <script>
+        var socket = io('192.168.1.87:3000');
+    </script>
+    
     <?php
         if ($_SESSION) { ?>
             <a href="../functions/logout.php">
@@ -56,17 +63,56 @@
     <!--    CHOISIR DE CREER OU REJOINDRE UNE GAME -->
     <div class="row" id="start-game-div">
         <h2>Joueurs dans la partie</h2>
-        <script>
-            $(document).ready(function () {
-                $('#example').DataTable({
-                    "processing": true,
-                    "serverSide": true,
-                    "ajax": "../server_side/scripts/server_processing.php"
-                });
-            });
-        </script>
         
-        <div class="col-md-3">
+        <table id="players-waiting" class="display nowrap" style="width: 25%">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Pseudo</th>
+                <th>Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Joueur 1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Joueur 2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Joueur 3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Joueur 4</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Joueur 5</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><?=$_SESSION['id']?></td>
+                <td><?=$_SESSION['nickname']?></td>
+                <td><?=$_SESSION['role']?></td>
+            </tr>
+            
+            </tbody>
+        </table>
+        
+        <p id="minesweeper"></p>
+    
+        <table id="example" class="display"></table>
+        
+        <div class="col-md-12">
             <a href="../bdd/startGame.php">
                 <button id="index-btn" type="button" class="btn btn-lg btn-danger">Lancer la partie</button>
             </a>
@@ -74,9 +120,19 @@
     </div>
 </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--<script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>-->
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script src="../js/template.js"></script>
-<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <script src="../js/script.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+
+
 </body>

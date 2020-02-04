@@ -622,4 +622,6 @@ form > div {
     color: #A43222;
 }
 
-
+#players-waiting tbody{
+    color: #333333
+}

@@ -2,11 +2,11 @@
     include("../db.php");
     
     if (empty($_POST['nickname'])) {
-        header("location: /roleAttribution.php?connected=2");
+        header("location: /index.php?connected=2");
     } else if (empty($_POST['password'])) {
-        header("location: /roleAttribution.php?connected=3");
+        header("location: /index.php?connected=3");
     } else {
-        $checkAccount = "SELECT * FROM users WHERE nickname = :nickname AND password = SHA2(:password,256)";
+        $checkAccount = "SELECT u.*, r.role as role FROM users u inner join roles r on u.id_role = r.id WHERE nickname = :nickname AND password = SHA2(:password,256)";
         //$checkAccount = "SELECT * FROM users WHERE nickname = :nickname AND password = SHA2(:password,256)";
         $checkAccount = $connexion->prepare($checkAccount);
         $checkAccount->bindParam(':nickname', $_POST['nickname']);
@@ -17,9 +17,9 @@
         if (!empty($accountFound)) {
             session_start();
             $_SESSION = $accountFound;
-            header("location: /roleAttribution.php?connected=1");
+            header("location: /index.php");
         } else {
-            header("location: /roleAttribution.php?connected=4");
+            header("location: /index.php?connected=4");
         }
     }
     
