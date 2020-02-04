@@ -38,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-push-2 text-center">
-                    <a href="/index.php">
+                    <a href="/SuperAwesome/functions/roleAttribution.php">
                         <h1>Do You Trust ?</h1>
                     </a>
                     <h2>Aïl & Fines Herbes Corporation</h2>

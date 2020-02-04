@@ -43,7 +43,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-push-2 text-center">
-                <a href="/index.php">
+                <a href="/SuperAwesome/functions/roleAttribution.php">
                     <h1>Do You Trust ?</h1>
                 </a>
                 <h2>Aïl & Fines Herbes Corporation</h2>
@@ -70,10 +70,7 @@
                             <p class="error-message"> Merci de renseigner une adresse email pour votre compte </p>
                         <?php }
                         
-                        if ($_GET['connected'] == 1) { //COMPTE CREE
-                            ?>
-                            <p class="ok-message"> Connexion réussie! </p>
-                        <?php } else if ($_GET['connected'] == 2) { //PSEUDO VIDE ?>
+                        if ($_GET['connected'] == 2) { //PSEUDO VIDE ?>
                             <p class="error-message"> Merci de renseigner votre pseudo </p>
                         <?php } else if ($_GET['connected'] == 3) { //PSEUDO DEJA PRIS ?>
                             <p class="error-message"> Merci de renseigner votre mot de passe </p>
@@ -85,7 +82,7 @@
                 
                 <?php if ($_SESSION){ ?>
                     <h2>Bienvenue <?= $_SESSION['nickname'] ?></h2>
-                    <a href="/pages/joinLobby.php">
+                    <a href="pages/game.php">
                         <button id="play-button" type="button" class="btn btn-lg btn-default">Jouer</button>
                     </a>
                 
@@ -173,10 +170,6 @@
         
         
         </div>
-    
-    </div>
-    </div>
-    </div>
     
     </div>
 </header>
