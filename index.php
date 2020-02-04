@@ -1,5 +1,5 @@
 <?php
-    include('header.html');
+    include('header.php');
 ?>
     <!-- require(__DIR__ . "/header.php"); -->
     <!-- require(header.html); -->
