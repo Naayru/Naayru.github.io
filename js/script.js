@@ -46,5 +46,11 @@ $(document).ready(function () {
         $('#minesweeper').text('Le démineur est: '+ data[1]);
     } );
 
+    table.on('user-select', function (e, dt, type, cell, originalEvent) {
+        if ($(cell.node()).parent().hasClass('selected')) {
+            e.preventDefault();
+        }
+    });
+
 });
 

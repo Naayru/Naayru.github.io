@@ -41,9 +41,9 @@
         </a>
     <?php } ?>
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-8 col-lg-push-2 text-center">
-                <a href="/SuperAwesome/functions/roleAttribution.php">
+                <a href="index.php" class="no-txt-trans">
                     <h1>Do You Trust ?</h1>
                 </a>
                 <h2>Aïl & Fines Herbes Corporation</h2>
@@ -116,10 +116,13 @@
                                                placeholder="Ton mot de passe">
                                     </div>
                                 </div>
+                                <div class="col-md-12">
+                                <input type="submit" class="btn btn-lg btn-default" id="sign-in-submit"
+                                       value="Se connecter">
+                                </div>
                             </div>
                             
-                            <input type="submit" class="btn btn-lg btn-default" id="sign-in-submit"
-                                   value="Se connecter">
+                         
                         </form>
                     </div>
                     

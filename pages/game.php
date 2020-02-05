@@ -50,7 +50,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-push-2 text-center">
-                <a href="/SuperAwesome/functions/roleAttribution.php">
+                <a href="../index.php" class="no-txt-trans">
                     <h1>Do You Trust ?</h1>
                 </a>
                 <h2>Aïl & Fines Herbes Corporation</h2>
@@ -75,12 +75,12 @@
             <tbody>
             <tr>
                 <td>1</td>
-                <td>Joueur 1</td>
+                <td>joueur 1</td>
                 <td></td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Joueur 2</td>
+                <td>JOUEUR 2</td>
                 <td></td>
             </tr>
             <tr>
@@ -108,13 +108,13 @@
             </tbody>
         </table>
         
-        <p id="minesweeper"></p>
+        <p id="minesweeper">Choisir un démineur</p>
     
         <table id="example" class="display"></table>
         
-        <div class="col-md-12">
+        <div class="col-md-12" id="start-game-div">
             <a href="../bdd/startGame.php">
-                <button id="index-btn" type="button" class="btn btn-lg btn-danger">Lancer la partie</button>
+                <button id="start-game-btn" type="button" class="btn btn-lg btn-default">Lancer la partie</button>
             </a>
         </div>
     </div>

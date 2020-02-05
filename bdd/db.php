@@ -1,7 +1,7 @@
 
 <?php
     
-    $host = '192.168.1.87';
+    $host = '192.168.1.89';
     $dbname = 'doyoutrust';
     $user = 'fdp'; // utilisateur de la base de données
     $pass = '0000'; // Mot de passe de la base de données

@@ -39,6 +39,7 @@ p, .jumbotron p {
 
 a {
     color: #CD503A;
+    text-decoration: none !important;
 }
 
 a:hover, a:focus {
@@ -149,7 +150,7 @@ h1 {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.header .btn-default {
+.btn-default {
     background: rgba(255, 255, 255, .06);
     border: 1px solid rgba(255, 255, 255, .8);
     color: rgba(255, 255, 255, .8);
@@ -507,15 +508,11 @@ a:visited { color: #5A8B86; }
 .form-field {
     justify-content: space-evenly;
     display: flex;
-    margin: 5px 0;
+    margin: 25px 0;
     padding: 0 150px;
 }
 
-form > div {
-    margin: 40px -15px;
-}
-
-#sign-in-submit:hover, #sign-up-submit:hover, #play-button:hover {
+#sign-in-submit:hover, #sign-up-submit:hover, #play-button:hover, button#sign-out:hover, #start-game-btn:hover {
     background-color: #ff999975;
 }
 
@@ -622,6 +619,76 @@ form > div {
     color: #A43222;
 }
 
+#players-waiting{
+    border: none;
+}
+
+#players-waiting thead {
+    display: none;
+}
+
+#players-waiting thead th {
+    border: none;
+    text-align: center;
+}
+
 #players-waiting tbody{
     color: #333333
+}
+
+#players-waiting td {
+    cursor: pointer;
+}
+
+#players-waiting tbody td, #players-waiting tbody {
+    background: #ff5301ad;
+    border: #00000050 0.1px solid;
+    text-transform: capitalize;
+}
+
+/* Round Corner for TOP LEFT COLUMN */
+
+table tbody tr:first-child  td:first-child
+{
+    border-top-left-radius: 5px;
+    border-top: none;
+}
+
+/* Round Corner for TOP RIGHT COLUMN */
+
+table tbody tr:first-child  td:last-child
+{
+    border-top-right-radius: 5px;
+
+    border-top: none;
+}
+
+/* Round Corner for BOTTOM LEFT COLUMN */
+
+table tbody tr:last-child td:first-child
+{
+    border-bottom-left-radius: 5px;
+}
+
+/* Round Corner for BOTTOM RIGHT COLUMN */
+
+table tbody tr:last-child td:last-child
+{
+    border-bottom-right-radius: 5px;
+}
+
+#start-game-div {
+    margin: 100px 0 0 0;
+}
+
+div#players-waiting_wrapper {
+    margin: 25px 0;
+}
+
+#start-game-div{
+    margin: 25px 0 0 0;
+}
+
+#start-game-div p {
+    margin: 0;
 }
